@@ -86,6 +86,11 @@ if __name__ == '__main__':
 	inputs = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]]
 	targets = [[0.0], [0.0], [0.0], [1.0]]
 	
+	# The OR function
+	or_ann = AritifialNeuralNetwork([2, 1])
+	inputs = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]]
+	targets = [[0.0], [1.0], [1.0], [1.0]]
+	
 	# Make predictions without training
 	for i in range(len(targets)):
 		print(and_ann.predict(inputs[i]))
